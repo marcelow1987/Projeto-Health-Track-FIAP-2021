@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativ Cap.5 Fase 4 Main Screen</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+</head>
+<body>
+    <div id="container4">
+        <Br>
+        <Br>
+        <center><h2><span>Health Track</span></h2></center>
+        <main class="container">
+            <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                <i class="bi bi-list"></i>
+            </button>    
+        </main>
+        <aside id="menu" class="offcanvas offcanvas-start">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-tittle">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form id="formulariomenu" action="./2-index-main.html" method="post">
+                    <button type="submit" class="btn btn-secondary">Tela Principal</button>
+                </form>
+                <BR>
+                <form id="formulariomenu" action="./3-index-listapeso.html" method="post">
+                    <button type="submit" class="btn btn-secondary">Lista de Peso</button>
+                </form>
+                <BR>
+                <form id="formulariomenu" action="./1-index-login.html" method="post">
+                    <button type="submit" class="btn btn-secondary">Sair</button>
+                </form>
+                <BR>
+            </div>
+        </aside>
+        <main class="container">
+            <section>
+                <Br>
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Data</th>
+                            <td scope="col">23/4/21 Hoje</td>
+                        </tr>
+                    </thead>
+                </table>
+                <Br>
+                <table class="table table-dark table-striped">
+                    <thead>
+                    <tr>                        
+                        <th scope="col">Período</th>
+                        <th scope="col">Calorias</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Manhã</td>
+                        <td>1000 Cal</td>
+                        <td>
+                            <i class="bi bi-pencil-square"> Editar</i>
+                            <i class="bi bi-trash">Deletar</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tarde</td>
+                        <td>1000 Cal</td>
+                        <td>
+                            <i class="bi bi-pencil-square"> Editar</i>
+                            <i class="bi bi-trash">Deletar</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Noite</td>
+                        <td>1000 Cal</td>
+                        <td>
+                            <i class="bi bi-pencil-square"> Editar</i>
+                            <i class="bi bi-trash">Deletar</i>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="container"  action="" method="post">
+                <button type="submit" class="btn btn-primary">Adicionar Marcação</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ativ Cap.5 Fase 4 Main Screen</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div id="container2">
+        <Br>
+        <Br>
+        <center><h2><span>Health Track</span></h2></center>
+        <main class="container">
+            <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#menu">
+                <i class="bi bi-list"></i>
+            </button>    
+        </main>
+        <aside id="menu" class="offcanvas offcanvas-start">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-tittle">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form id="formulariomenu" action="./3-index-listapeso.html" method="post">
+                    <button type="submit" class="btn btn-secondary">Lista de Pesos</button>
+                </form>
+                <BR>
+                <form id="formulariomenu" action="./4-index-caloriasperiodo.html" method="post">
+                    <button type="submit" class="btn btn-secondary">Calorias por Período</button>
+                </form>
+                <BR>
+                <form id="formulariomenu" action="./1-index-login.html" method="post">
+                    <button type="submit" class="btn btn-secondary">Sair</button>
+                </form>
+                <BR>
+            </div>
+        </aside>
+        <main class="container">
+            <section>
+                <Br>
+                <table class="table table-dark table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Marcações</th>
+                        <th scope="col">Feedback</th>
+                        <th scope="col">Alteração Campos</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Peso Atual</th>
+                        <td>70 kg</td>
+                        <td>-2Kg desde última medição</td>
+                        <td>
+                            <div class="container">
+                                <form id="formulario" action="" method="post">
+                                    <div>
+                                      <input type="marcacaopeso" placeholder="inserir nova marcação" class="form-control" id="marcacaopeso" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Ok</button>
+                                  </form>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Altura</th>
+                        <td>1,80cm</td>
+                        <td>Sua altura é acima da média brasileira</td>
+                        <td>
+                            <i class="bi bi-pencil-square"> Edite sua Altura</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Idade</th>
+                        <td>33 anos</td>
+                        <td></td>
+                        <td>
+                            <i class="bi bi-pencil-square"> Edite sua Data de Nascimento</i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">IMC</th>
+                        <td>21,6 kg/m2</td>
+                        <td>Dentro da média para sua idade</td>
+                        <td>Campo calculado, não editável.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Calorias/Dia</th>
+                        <td>3000/3000 Cal</td>
+                        <td></td>
+                        <td>
+                            <div class="container">
+                                <form id="formulario" action="" method="post">
+                                    <div>
+                                      <input type="marcacaocalorias" placeholder="inserir nova marcação" class="form-control" id="marcacaocalorias" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Ok</button>
+                                  </form>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

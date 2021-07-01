@@ -1,0 +1,41 @@
+h1 {
+    color: whitesmoke;
+    font-style: italic;
+}
+
+h2 {
+    color: rgb(82, 44, 44);
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    background: url('../Images/Background tela Login - Site Freepik.jpg');
+    background-size: cover;    
+}
+
+#container2 {
+    width: 100vw;
+    height: 100vh;
+    background: url('../Images/Tela Main - IMC-Site Terra.jpg');
+    background-size: cover;    
+}
+
+#container3 {
+    width: 100vw;
+    height: 100vh;
+    background: url('../Images/Tela Peso - Idoso Balança - Site IfLHealthClub.WordPress.jpg');
+    background-size: cover;    
+}
+
+#container4 {
+    width: 100vw;
+    height: 100vh;
+    background: url('../Images/Peso Alimentos - Site Torcedores.jpg');
+    background-size: cover;    
+}
